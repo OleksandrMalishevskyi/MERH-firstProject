@@ -1,30 +1,34 @@
 {
-  "name": "projectvm",
+  "name": "mern-course",
   "version": "1.0.0",
-  "description": "Mern Stack",
+  "description": "Mern stack",
   "main": "app.js",
   "scripts": {
-    "start": "app.js",
+    "start": " node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": " concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "mern",
     "react"
   ],
-  "author": "Oleksandr Malishevskyi",
+  "author": "Oleksandr Malishevskyi <oleksandr.malishevskyi@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
-    "config": "^3.3.7",
-    "express": "^4.17.3",
-    "express-validator": "^6.14.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.2.3"
+    "mongoose": "^5.8.1",
+    "shortid": "^2.2.15"
   },
   "devDependencies": {
-    "concurrently": "^7.0.0",
-    "nodemon": "^2.0.15"
+    "concurrently": "^5.0.2",
+    "cross-env": "^6.0.3",
+    "nodemon": "^2.0.2"
   }
 }
