@@ -1,5 +1,6 @@
 {
     "port": 5000, 
     "jwtSecret": "oleksandr kiberwar from paRussia",
-    "mongoUri": "mongodb+srv://Oleksandr:1234qwer@cluster0.g94ns.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoUri": "mongodb+srv://Oleksandr:1234qwer@cluster0.g94ns.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "baseUrl": "http://localhost:5000"
 }
